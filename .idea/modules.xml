@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-bootRun_demo/spring-bootRun_demo.iml" filepath="$PROJECT_DIR$/spring-bootRun_demo/spring-bootRun_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springRun_demo/springRun_demo.iml" filepath="$PROJECT_DIR$/springRun_demo/springRun_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_webmvc/spring_webmvc.iml" filepath="$PROJECT_DIR$/spring_webmvc/spring_webmvc.iml" />
+    </modules>
+  </component>
+</project>
