@@ -172,14 +172,24 @@ public class AnnotationElementUtils<A> {
         return methods;
     }
 
+    /**
+     * 判断注解的属性值是否相等
+     * @param o1
+     * @param o2
+     * @return
+     */
     private static boolean isEquals(Object o1, Object o2) {
         boolean result = false;
-        if (o1.getClass().isArray()) {
-            Object[] arr1 = (Object[]) o1;
-            Object[] arr2 = (Object[]) o2;
-            result = Arrays.equals(arr1, arr2);
-        } else {
-            result = o1.equals(o2);
+        // 先判断两个对象是否同种类型
+        if(o1.getClass().isInstance(o2)){
+            // 再判断是否是数组类型的，然后决定采用哪种方式比较
+            if (o1.getClass().isArray()) {
+                Object[] arr1 = (Object[]) o1;
+                Object[] arr2 = (Object[]) o2;
+                result = Arrays.equals(arr1, arr2);
+            } else {
+                result = o1.equals(o2);
+            }
         }
         return result;
     }
